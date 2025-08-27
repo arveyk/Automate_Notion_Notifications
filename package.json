@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "@notionhq/client": "^4.0.0",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "n-readlines": "^1.0.1",
+    "nodemon": "^3.1.10",
+    "zod": "^3.25.76"
+  },
+  "name": "notionAutomation",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test-helpers": "npx jest utils/aiagent.test.js utils/db-search.test.js blockkit/createBlocks.test.js utils/convertEmptyFields.test.js utils/simplifyDBResults.test.js",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "format": "npx prettier . --write",
+    "lint": "npx eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@eslint/js": "^9.32.0",
+    "babel-jest": "^30.0.4",
+    "babel-plugin-transform-import-meta": "^2.3.3",
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "jest": "^30.0.4",
+    "node-mocks-http": "^1.17.2",
+    "prettier": "3.6.2",
+    "supertest": "^7.1.3"
+  }
+}
